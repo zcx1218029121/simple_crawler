@@ -22,3 +22,6 @@ buildNumber.properties
 
 src/main/resources/
 src/test/
+simple_java_crawler.iml
+target
+.idea
