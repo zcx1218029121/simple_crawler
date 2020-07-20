@@ -40,6 +40,7 @@ public class TaskManager implements Runnable {
                             if (result instanceof Task){
                                 crawlerContext.addTask((Task) result);
                             }else {
+                                // todo 处理元数据
                             }
                         }
 

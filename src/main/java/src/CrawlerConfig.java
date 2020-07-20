@@ -15,11 +15,11 @@ public class CrawlerConfig implements Serializable, Cloneable {
     /**
      * 最大线程数
      */
-    private final int DEFAULT_THREAD_MAX = 5;
+    private final int DEFAULT_THREAD_MAX = 30;
     /**
      * 初始线程数
      */
-    private final int DEFAULT_THREAD_MIN = 3;
+    private final int DEFAULT_THREAD_MIN = 30;
 
     /**
      * 任务队列为空等待时间 单位毫秒

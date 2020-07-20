@@ -23,7 +23,7 @@ public class HttpRequestHelper {
     public static HttpResponse get(Task task) throws IOException {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpGet get = new HttpGet(task.getUrl());
-        RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout((int) task.getDueTime()).setConnectTimeout((int) task.getDueTime()).build();
+        RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(10000).setConnectTimeout(10000).build();
         get.setConfig(requestConfig);
         return httpClient.execute(get);
     }
